@@ -17,20 +17,20 @@ public class Histogram {
 	
 
 	//Constructors
-    public Histogram(String fileName) {
-    	this.fileName = fileName;
-    	try
-    	{
-    		file = new Scanner(new File(fileName));
-    	}
-    	catch(Exception e)
-    	{
-    		out.println("constructor failed on file scanner");
-    	}
-    }
+    	public Histogram(String fileName) {
+		this.fileName = fileName;
+		try
+		{
+			file = new Scanner(new File(fileName));
+		}
+		catch(Exception e)
+		{
+			out.println("constructor failed on file scanner");
+		}
+	 }
     
     
-    /**
+    	/**
 	 *this will find the longest length
 	 *
 	 *the longest length will be needed to align 
